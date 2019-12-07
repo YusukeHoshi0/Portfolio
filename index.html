@@ -1,189 +1,233 @@
-<!doctype html>
-<html lang="jp">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  <!-- Start your project here-->  
+  <!--Navbar -->
+<nav class="mb-1 navbar fixed-top navbar-expand-lg navbar-light grey scrolling-navbar lighten-5">
+  <a class="navbar-brand" href="#">ポートフォリオ</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home
+          <!-- <span class="sr-only">(current)</span> -->
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#navbar-about">about</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#navbar-skill">skill</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Works
+        </a>
+        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+          <a class="dropdown-item" href="#navbar-works">Chatspace</a>
+          <a class="dropdown-item" href="#navbar-works">フリーマケットアプリ</a>
+          <a class="dropdown-item" href="#navbar-works">Comming soon...</a>
+        </div>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#navbar-contact">Contact</a>
+        </li>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a href="https://twitter.com/kurosuk13770361" class="nav-link waves-effect waves-light">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://github.com/YusukeHoshi0/" class="nav-link waves-effect waves-light">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-default"
+          aria-labelledby="navbarDropdownMenuLink-333">
+          <a class="dropdown-item" href="https://kurosukedo.hatenablog.com/">ブログ</a>
+          <!-- <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a> -->
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--/.Navbar -->
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">ポートフォリオサイト</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active ">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">about</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Works
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">ChatSpace</a>
-              <a class="dropdown-item" href="#">クローンサイト</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  
-    <div class="container content-box mt-5">
-      <h2 class="card-title">About me</h5>
-      <div class="card" >
-        <div class="row no-gutters">
-          <div class="col-4">
-            <img src="https://picsum.photos/200/200" class="card-img" alt="...">
-          </div>
-          <div class="col-8">
-            <div class="card-body">
-              <p class="card-text">
-                星野佑介です.
-                Webエンジニアを目指しています。</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
+<div data-spy="scroll" data-target="#navbar" class="scrollspy" data-offset="0">
+  <div class="header-spacing" id="navbar-about"></div>
+  <div class="container content-box">
+    <h2 class="card-title mt-3">About me</h5>
+    <div class="card" >
+      <div class="row no-gutters">
+        <div class="col-4">
+          <img src="img/いいね１.jpg" class="card-img" alt="profile">
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <p class="card-text">
+              星野佑介です.
+              Webエンジニアを目指しています。
+            </p>
+            <p class="card-text">
+                略歴：電気通信大学情報理工学研究科修了　工学修士<br>
+                　　　公的研究機関非常勤職員<br>
+                　　　TECH:EXPERT名古屋53期（プログラミングスクール）
+            </p>
+            <p class="card-text"><small class="text-muted">現在お仕事探してます！！</small></p>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="container mt-5">
-      <h2 class="card-title">Skill</h5>
-      <div class="card"">
+  </div>
+  <div class="header-spacing" id="navbar-skill"></div> 
+  <div class="container">
+    <h2 class="card-title">Skill</h5>
+    <div class="card"">
+      <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted"></h6>
+        <p class="card-text">
+            使用可能言語：HTML/CSS/Haml/SCSS/Jquery/Ruby/Ruby on Rails
+        </p>
+        <p class="card-text">
+            経験スキル：GitHub/AWS/MySQL/Slack/Trello/アジャイル型開発
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="header-spacing" id="navbar-works"></div> 
+  <div class="container">
+    <h2 class="card-title" >Works</h5>
+    <div class="card-deck">
+      <div class="card view overlay zoom">
+        <a href="http://52.194.146.48/">
+          <img src="img/chatspce.png" class="card-img-top" alt="...">
+        </a>
         <div class="card-body">
-          <h6 class="card-subtitle mb-2 text-muted"></h6>
-          <p class="card-text">
-              使用可能言語：HTML/CSS/Haml/SCSS/Jquery/Ruby/Ruby on Rails
-          </p>
-          <p class="card-text">
-              経験スキル：GitHub/AWS/MySQL/Slack/Trello/アジャイル型開発
-          </p>
-          <p class="card-text">
-              略歴：情報理工学研究科修了　工学修士<br>
-              　　　公的研究機関非常勤職員<br>
-              　　　TECH:EXPERT名古屋53期（プログラミングスクール）
-          </p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <h5 class="card-title">ChatSpace</h5>
+          <p class="card-text">会員登録制のチャットアプリ</p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
         </div>
       </div>
-    </div>
-
-    <div class="container mt-5">
-      <h2 class="card-title">Works</h5>
-      <div class="card-deck">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">ChatSpace</h5>
-            <p class="card-text">会員登録制のチャットアプリ</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">クローンサイト</h5>
-            <p class="card-text">メルカリクローンサイトを作成しました。アジャイル開発4人体制</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">個人アプリ</h5>
-            <p class="card-text">Comming soon...</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container mt-5">
-      <h2 class="card-title">Contact</h5>
-      <div class="card"">
+      <div class="card view overlay zoom">
+        <a href="http://52.194.65.123/tops">
+          <img src="img/mercari_top.png" class="card-img-top" alt="...">
+        </a>
         <div class="card-body">
-          <h6 class="card-subtitle mb-2 text-muted"></h6>
+          <h5 class="card-title">フリーマーケットアプリ</h5>
+          <p class="card-text">メルカリクローンサイトを作成しました。アジャイル開発4人体制。</p>
           <p class="card-text">
-            お仕事の依頼は以下のアプリケーションから受付けております。
+            認証を解除して閲覧ください。<br>
+            ユーザーネーム：admin
+            パスワード：5555
           </p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+      <div class="card view overlay zoom">
+        <img src="img/準備中.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">個人アプリ</h5>
+          <p class="card-text">Comming soon...</p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
         </div>
       </div>
     </div>
+  </div>
+  <div class="header-spacing" id="navbar-contact"></div> 
+  <div class="container">
+    <h2 class="card-title" >Contact</h5>
+    <div class="card"">
+      <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted"></h6>
+        <p class="card-text">
+          お仕事の依頼は以下のアプリケーションから受付けております。
+        </p>
+        <a href="https://twitter.com/kurosuk13770361" class="card-link">
+          <i class="fab fa-twitter"> twitter </i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Footer -->
-<footer class="mt-5">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <!-- Footer Elements -->
-      <div class="container">
-    
-        <!-- Social buttons -->
-        <ul class="">
-          <li class="">
-            <a class="">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="">
-            <a class="">
-              <i class="fa fa-facebook-square"></i>
-            </a>
-          </li>
-          <li class="">
-            <a class="">
-              <i class="fa fa-github-square"></i>
-            </a>
-          </li>
-          <li class="">
-            <a class="">
-              <i class="fa fa-envelope-o"></i>
-            </a>
-          </li>
-          <li class="">
-            <a class="">
-              <i class="fa fa-bold"></i>
-            </a>
-          </li>
-          
-        </ul>
-        <!-- Social buttons -->
-    
-      </div>
-      <!-- Footer Elements -->
-    
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2018 Copyright:
-        <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-      </div>
-      <!-- Copyright -->
-    </nav>
+<footer class="page-footer font-small special-color-dark mt-5 pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com/yusuke.hoshino.56" class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook-f footer-icon"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://twitter.com/kurosuk13770361" class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter footer-icon"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://github.com/YusukeHoshi0/" class="btn-floating btn-gplus mx-1">
+            <i class="fab fa-github footer-icon"></i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href=""> Yusuke Hoshino</a>
+    </div>
+    <!-- Copyright -->
+  
   </footer>
   <!-- Footer -->
-    
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
 </html>
