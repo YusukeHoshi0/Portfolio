@@ -9,3 +9,8 @@
 .fab {
   font-size: large;
 }
+
+.profile-img {
+  max-height: 400px;
+  width: auto;
+}
